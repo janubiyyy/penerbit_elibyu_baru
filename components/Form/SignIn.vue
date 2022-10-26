@@ -2,12 +2,11 @@
   <div class="d-flex justify-center align-center min-h-100vh">
     <v-flex lg6>
       <v-row no-gutters>
-        <v-container fluid class="pb-12">
-          <h1 class="text-center">Sign in to your Admin account</h1>
-        </v-container>
       </v-row>
       <v-col>
         <v-card elevation="2" light class="bg-wave">
+                    <center>  <img src="~/assets/image/elib.jpeg" alt="Logo Brand" style="width:300px ; height:150px; "/></center>
+
           <v-card-title> Login to Your Account </v-card-title>
           <v-container>
             <v-row class="text-left">

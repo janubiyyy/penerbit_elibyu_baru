@@ -42,7 +42,9 @@
       </v-col>
 
     </v-col>
+    <Footer />
   </v-row>
+  
 </template>
 
 <script>

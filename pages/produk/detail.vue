@@ -45,6 +45,9 @@
                             
                             <div style="padding: 20px;">
                                 <h2 class="title-page-sub"> Riwayat Edit Produk</h2></div>
+                                <h3 v-if="dataHistory.length==0">
+                                    <center>History Edit kosong</center>
+                                </h3>
                                 <template>
                                     <div style="padding: 30px;">
                             <v-row justify="center">

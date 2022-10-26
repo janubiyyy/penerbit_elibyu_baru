@@ -3,11 +3,10 @@
     id="blank"
     :dark="isDark"
     style="
-      background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=1152&q=80');
-      background-position: center;
+      background: #324da1;
+    background-image: url('https://assets.tokopedia.net/assets-tokopedia-lite/v2/zeus/kratos/149df038.svg');
       background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: scroll;
+      background-size: contain;
     "
     ><SeoHead />
     <v-main>

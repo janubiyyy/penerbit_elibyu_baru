@@ -25,8 +25,10 @@
           style="height: 33px"
         >
           <!-- <h4 :class="`${miniVariant ? 'subtitle-2' : ''} my-6`" v-text="title" -->
-          <h4 class="my-6" v-text="title"
-        /></v-flex>
+            <br>
+            <center>
+        <v-img lazy-src="https://elibyu.id/_nuxt/img/logo-elib.1f063c8.jpeg" max-height="100" max-width="200"
+          src="https://elibyu.id/_nuxt/img/logo-elib.1f063c8.jpeg"></v-img> </center></v-flex>
       </nuxt-link>
       <!-- <v-container fluid class="accent darken-2">
         <v-row>
@@ -43,6 +45,10 @@
           </v-col>
         </v-row>
       </v-container> -->
+      <br>
+      <br>
+      <br>
+      <br>
       <v-list :dark="isDark" v-if="isAuthenticated">
         <slot v-for="(item, i) in items">
           <v-list-group
@@ -164,14 +170,6 @@
           <!-- <v-list-item v-for="(item, i) in items" :key="i" :to="item.to">
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item> -->
-          <v-list-item @click="logout">
-            <v-list-item-icon>
-              <v-icon>mdi-logout-variant</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title> Logout </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
           <v-list-item :to="`/user-profile`">
             <v-list-item-icon>
               <v-icon>mdi-account-circle-outline</v-icon>
@@ -180,14 +178,22 @@
               <v-list-item-title> Profile </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item :to="`/`">
+          <v-list-item @click="logout">
+            <v-list-item-icon>
+              <v-icon>mdi-logout-variant</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title> Logout </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- <v-list-item :to="`/`">
             <v-list-item-icon>
               <v-icon>mdi-cog-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title> {{ title }} Setting </v-list-item-title>
             </v-list-item-content>
-          </v-list-item>
+          </v-list-item> -->
         </v-list>
       </v-menu>
     </v-app-bar>

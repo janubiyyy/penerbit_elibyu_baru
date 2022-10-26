@@ -19,14 +19,10 @@
                                             <v-text-field v-model="tahun_terbit" label="Tahun Terbit"></v-text-field>
                                             <v-text-field v-model="halaman" label="Halaman"></v-text-field>
                                             <v-text-field v-model="manufacture" label="manufacture"></v-text-field>
+                                            <div class="d-flex justify-center ma-4" style="width: 200px; ">
+                                            <v-img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + halaman"></v-img></div>
                                             <v-file-input show-size label="Update Cover"></v-file-input>
-                                            <template v-slot:item.cover="{ item }">
-                                                <span>
-                                                    <div>
-                                                        <img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + item.cover" style="height:10rem ;">
-                                                    </div>
-                                                </span>
-                                            </template>
+                                            
 
                                            
                                     <v-btn tile color="primary" class="mr-6" @click="edit">
