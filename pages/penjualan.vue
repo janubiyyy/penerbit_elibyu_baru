@@ -19,14 +19,14 @@
               </span>
             </template>
             <template v-slot:item.action="{ item }">
-              <NuxtLink :to="'/edit/' + item.id" class="link-a">
+              <NuxtLink :to="{ path: '/produk/edit', query: { id: item.id }}" class="link-a">
                 <v-btn variant="primary"><i class="bx bx-edit" style="font-size: 1rem;"></i></v-btn>
               </NuxtLink>
-              <NuxtLink :to="'/addpage/' + item.id" class="link-a">
+              <NuxtLink :to="{ path: '/produk/detail', query: { id: item.id }}" class="link-a">
                 <v-btn variant="warning"><i class="bx bx-show-alt" style="font-size: 1rem;"></i></v-btn>
               </NuxtLink>
             </template>
-
+          
           </v-data-table>
         </v-card>
       </v-col>
@@ -74,7 +74,7 @@ export default {
     getPage: function () {
       // we simulate an api call that fetch the records from a backend
       this.$axios.get(`penerbit/transaction/get-product?page=1&limit=10&keyword=`).then((response) => {
-        this.desserts = response.data.data.order
+        this.items = response.data.data.order
         console.log(response.data.data);
       })
         .catch(err => {

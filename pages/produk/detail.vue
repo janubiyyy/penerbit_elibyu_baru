@@ -7,7 +7,7 @@
                    
                     <template v-slot:extension>
                         <v-tabs v-model="tabs" >
-                            <v-tab v-for="n in 3" :key="n">
+                            <v-tab v-for="n in 2" :key="n">
                                 Detail {{ n }}
                             </v-tab>
                         </v-tabs>
@@ -45,9 +45,9 @@
                             
                             <div style="padding: 20px;">
                                 <h2 class="title-page-sub"> Riwayat Edit Produk</h2></div>
-                                <h3 v-if="dataHistory.length==0">
+                                <h4 v-if="dataHistory.length==0">
                                     <center>History Edit kosong</center>
-                                </h3>
+                                </h4>
                                 <template>
                                     <div style="padding: 30px;">
                             <v-row justify="center">
@@ -71,7 +71,6 @@
                                                 <v-text-field v-model="item.status_update" label="Status Update" disabled></v-text-field>
                                                 <v-text-field v-model="item.tanggalpengajuan" label="Tanggal Pengajuan" disabled></v-text-field>
                                                 
-                                 
                                             </div>
                                         </v-expansion-panel-content>
                                     </v-expansion-panel>
@@ -79,35 +78,20 @@
                             </v-row>
                             </div>
                             </template>
-                          
                         </v-card>
                     </v-tab-item>
-                    
                     <v-tab-item>
-                        <div style="padding: 20px;">
+                        <!-- <div style="padding: 20px;">
                             <h2 class="title-page-sub">Cover Produk</h2>
-                        </div>
-                        <v-card flat>
+                        </div> -->
+                        <!-- <v-card flat>
                        <div class="d-flex justify-center ma-4" style="width: 250px; ">
-                    <v-img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + halaman" ></v-img>
-                                            </div>
-                          
-                        </v-card>
+                    <v-img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + halaman" ></v-img> </div>  
+                        </v-card> -->
                     </v-tab-item>
-                
                 </v-tabs-items>
             </v-card>
         </template>
-
-            <!-- <img src="/v.png" alt="Vuetify.js" class="mt-8" />
-            <blockquote class="blockquote">
-                &#8220;First, solve the problem. Then, write the code.&#8221;
-                <footer>
-                    <small>
-                        <em>&mdash;John Johnson</em>
-                    </small>
-                </footer>
-            </blockquote> -->
         </v-col>
     </v-row>
 </template>

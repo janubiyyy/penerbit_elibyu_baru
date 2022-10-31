@@ -19,9 +19,12 @@
                                             <v-text-field v-model="tahun_terbit" label="Tahun Terbit"></v-text-field>
                                             <v-text-field v-model="halaman" label="Halaman"></v-text-field>
                                             <v-text-field v-model="manufacture" label="manufacture"></v-text-field>
-                                            <div class="d-flex justify-center ma-4" style="width: 200px; ">
+                                            <!-- <div class="d-flex justify-center ma-4" style="width: 200px; ">
                                             <v-img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + halaman"></v-img></div>
-                                            <v-file-input show-size label="Update Cover"></v-file-input>
+                                        <div>
+                                            <v-file-input v-model="avatarImage" label="Update Cover" required @change="onFileChange"></v-file-input>
+                                            <img v-if="imagePreviewURL" :src="imagePreviewURL" alt="" class="d-flex justify-center ma-4" style="max-width: 100%;width: 250px; object-fit: cover" />
+                                        </div> -->
                                             
 
                                            
@@ -56,6 +59,7 @@ export default {
         tahun_terbit: "",
         halaman: "",
         manufacture: "",
+        imagePreviewURL: null,
     }),
 
     computed: {
@@ -83,11 +87,6 @@ export default {
                     this.tahun_terbit = response.data.data[0].productPage
                     this.halaman = response.data.data[0].productCover
                     this.manufacture = response.data.data[0].productManufacturer
-
-
-
-
-
 
                 })
                 .catch(err => {
@@ -147,6 +146,16 @@ export default {
             this.email = ''
             this.select = null
             this.checkbox = false
+        },
+        onFileChange(payload) {
+            //const file = payload.target.files[0]; // use it in case of normal HTML input
+            const file = payload; // in case vuetify file input
+            if (file) {
+                this.imagePreviewURL = URL.createObjectURL(file);
+                URL.revokeObjectURL(file); // free memory
+            } else {
+                this.imagePreviewURL = null
+            }
         }
     }
 }
