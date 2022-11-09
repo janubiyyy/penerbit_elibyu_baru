@@ -300,14 +300,14 @@ export default {
         },
         {
           icon: 'mdi-message-bulleted',
-          title: 'Transaksi',
+          title: 'Laporan Transaksi',
           to: '/transaksi'
         },
-        {
-          icon: 'mdi-flag',
-          title: 'Laporan Penjualan',
-          to: '/penjualan'
-        },
+        // {
+        //   icon: 'mdi-flag',
+        //   title: 'Laporan Penjualan',
+        //   to: '/penjualan'
+        // },
         // {
         //   icon: 'mdi-cards',
         //   title: 'Penjualan',

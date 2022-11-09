@@ -175,7 +175,7 @@
           <v-col cols="12" md="4">
             <v-card height="100%">
               <v-container>
-                <h3 class="title-page">5 Produk yang sering dilihat</h3>
+                <h3 class="title-page">7 Produk yang sering dilihat</h3>
                 <v-container fluid>
                   <!-- <v-virtual-scroll width="256" height="321" item-height="120"> -->
                   <v-row no-gutters>
@@ -256,8 +256,41 @@
                         <cite class="font-weight-thin">- Gramedia</cite>
                       </blockquote>
                     </v-col>
+                    
                   </v-row>
-                
+                  <v-row no-gutters>
+                    <v-col cols="2" align-self="center" align="center">
+                      <v-avatar color="grey">
+                        <span class="white--text font-weight-bold">RAJ</span>
+                      </v-avatar>
+                    </v-col>
+                    <v-col cols="10">
+                      <blockquote class="blockquote grey--text body-1 px-3">
+                        <div class="mb-1">
+                          Rintangan Adalah Jalan
+                        </div>
+                        <cite class="font-weight-thin">- Gramedia</cite>
+                      </blockquote>
+                    </v-col>
+                  
+                  </v-row>
+
+                  <v-row no-gutters>
+                    <v-col cols="2" align-self="center" align="center">
+                      <v-avatar color="grey">
+                        <span class="white--text font-weight-bold">RAJ</span>
+                      </v-avatar>
+                    </v-col>
+                    <v-col cols="10">
+                      <blockquote class="blockquote grey--text body-1 px-3">
+                        <div class="mb-1">
+                          Rintangan Adalah Jalan
+                        </div>
+                        <cite class="font-weight-thin">- Gramedia</cite>
+                      </blockquote>
+                    </v-col>
+                  
+                  </v-row>
                 </v-container>
               </v-container>
             </v-card>

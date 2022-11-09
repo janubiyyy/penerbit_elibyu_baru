@@ -21,10 +21,10 @@
             :search="search"
             light
           >
-          <template v-slot:item.cover="{ item }">
+          <template v-slot:item.coverProduct="{ item }">
             <span>
               <div>
-                <img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + item.cover" style="height:10rem ;">
+                <img :src="'https://cdn.eurekabookhouse.co.id/ebh/product/all/' + item.coverProduct" style="height:10rem ;">
               </div>
             </span>
           </template>
@@ -54,21 +54,19 @@ export default {
     return {
       search: '',
       headers: [
-        {
-          text: 'ID',
-          align: 'start',
-          sortable: false,
-          value: 'productId'
-        },
-        { text: 'Cover', value: 'cover' },
-        { text: 'Title', value: 'bookTittle' },
-        { text: 'Category', value: 'bookCategory' },
-        { text: 'Author', value: 'authorName' },
-        { text: 'Model', value: 'model' },
-        { text: 'ISBN', value: 'isbn' },
-        { text: 'Publish Year', value: 'publishYear' },
-        { text: 'Koleksi', value: 'koleksi' },
-        { text: 'Actions', value: 'action' },
+        { text: 'Code', value: 'productCode' },
+        { text: 'Cover', value: 'coverProduct' },
+        { text: 'ISBN', value: 'productIsbn' },
+        { text: 'Product', value: 'productName' },
+        { text: 'Invoce', value: 'noInvoce' },
+        { text: 'Total', value: 'productTotal' },
+        { text: 'Price', value: 'productPrice' },
+        { text: 'Buyer', value: 'buyer' },
+        { text: 'E-mail', value: 'email' },
+        // { text: 'buyerTime', value: 'buyerTime' },
+
+
+        // { text: 'Actions', value: 'action' },
       ],
       desserts: []
       
