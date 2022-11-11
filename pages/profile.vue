@@ -13,11 +13,11 @@
                 <v-text-field v-model="loggedInUser.address" label="Alamat" ></v-text-field>
                 <v-text-field v-model="loggedInUser.email" label="Email" ></v-text-field>
                 <v-text-field v-model="loggedInUser.phone" label="No Telphone" ></v-text-field>
-                <div>
+                <!-- <div>
                   Profile Penerbit
                   <v-file-input v-model="avatarImage" label="Image" required @change="onFileChange" ></v-file-input>
                   <img v-if="imagePreviewURL" :src="imagePreviewURL" alt="" style="max-width: 100%;width: 250px; object-fit: cover" />
-                </div>
+                </div> -->
                 
               </v-form>
             </v-card-text>
